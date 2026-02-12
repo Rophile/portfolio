@@ -115,6 +115,7 @@ body{
     font-weight:500;
     box-shadow:0 8px 20px rgba(141,111,184,0.3);
     transition:0.3s;
+    margin-top: 10px;
 }
 
 .btn-primary:hover{
@@ -144,7 +145,17 @@ body{
 }
 
 .section h2{
-    margin-bottom:30px;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family:'Fredoka', sans-serif;
+    color:#8d6fb8;
+    margin-bottom: 10px;
+}
+
+.section h3{
+    margin-bottom:5px;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -205,8 +216,63 @@ body{
     font-size: 15px;
 }
 
-/* FOOTER */
+/* PROJECTS */
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
 
+.project-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-preview {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.project-preview iframe {
+    width: 100%;
+    height: 300px;
+    pointer-events: none; /* supaya tidak bisa scroll di dalam */
+}
+
+.project-preview:hover {
+    transform: translateY(-8px);
+}
+
+/* Overlay hover effect */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(141,111,184,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.overlay span {
+    color: white;
+    font-weight: 600;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.project-preview:hover .overlay {
+    opacity: 1;
+}
+
+/* FOOTER */
 footer {
     background-color: #b79ad6;
     color: #5b4b63;
