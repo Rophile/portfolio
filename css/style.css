@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#fdf6ec;
+    color:#4b3f53;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 8%;
+    background:rgba(253,246,236,0.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+.logo{
+    font-weight:600;
+    font-size:1.1rem;
+    letter-spacing:1px;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:40px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#5b4b63;
+    font-weight:500;
+    position:relative;
+    transition:0.3s;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    bottom:-6px;
+    left:0;
+    background:#b79ad6;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#8d6fb8;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* HERO */
+
+.hero{
+    padding-top:150px;
+    padding-bottom:80px;
+}
+
+.hero-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:0 8%;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.bubble-name{
+    font-family:'Fredoka', sans-serif;
+    font-size:3rem;
+    color:#8d6fb8;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#b79ad6;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+.description{
+    line-height:1.7;
+    margin-bottom:25px;
+    color:#6b5f72;
+}
+
+.btn-primary{
+    text-decoration:none;
+    background:#b79ad6;
+    color:white;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    background:#9e7ec9;
+}
+
+/* IMAGE */
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #f3e8ff;
+    box-shadow:0 10px 30px rgba(183,154,214,0.3);
+}
+
+/* GENERAL SECTION */
+
+.section{
+    padding:80px 8%;
+}
+
+.section h2{
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+    .hero-container{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero-image img{
+        width:220px;
+        height:220px;
+    }
+
+    .nav-links{
+        gap:20px;
+    }
+}
