@@ -21,7 +21,7 @@ body{
     top:0;
     width:100%;
     padding:18px 8%;
-    background:rgba(253,246,236,0.95);
+    background:#b79ad6;
     backdrop-filter:blur(10px);
     display:flex;
     justify-content:space-between;

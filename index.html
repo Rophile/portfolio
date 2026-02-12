@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Fredoka:wght@500&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.jpg">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -44,7 +44,116 @@
         </div>
 
         <div class="hero-image">
-            <img src="profile.jpg" alt="Syaila Photo">
+            <img src="profile.jpeg" alt="Syaila Photo">
+        </div>
+
+    </div>
+</section>
+
+Baik. Kita bikin versi final yang rapi, mature, cream latte dengan sentuhan lilac halus 💜☕
+Strukturnya:
+
+Home
+Tech Stack (ada logo di bawah nama)
+Experience
+Project
+Certification
+Footer dengan copyright + icon sosial
+
+Aku kasih versi lengkap terpisah HTML dan CSS.
+
+Struktur folder:
+
+index.html
+style.css
+profile.jpg
+favicon.png
+
+
+Kita pakai icon dari Font Awesome biar logo IG, LinkedIn, Email bisa diklik.
+
+✅ index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Syaila Fa Agna | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Fredoka:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Syaila Fa Agna</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#certification">Certification</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1 class="bubble-name">Syaila Fa Agna</h1>
+            <p class="subtitle">Informatics Student | Data Science Enthusiast</p>
+            <p class="description">
+                Passionate about data analytics, AI, and building elegant web experiences.
+                Turning raw data into meaningful insight is my specialty.
+            </p>
+        </div>
+
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Profile Photo">
+        </div>
+    </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="tech" class="section">
+    <h2>Tech Stack</h2>
+    <div class="tech-grid">
+
+        <div class="tech-card">
+            <h3>Python</h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+        </div>
+
+        <div class="tech-card">
+            <h3>VS Code</h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+        </div>
+
+        <div class="tech-card">
+            <h3>Excel</h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg">
+        </div>
+
+        <div class="tech-card">
+            <h3>HTML</h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+        </div>
+
+        <div class="tech-card">
+            <h3>CSS</h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+        </div>
+
+        <div class="tech-card">
+            <h3>React</h3>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
         </div>
 
     </div>
@@ -77,6 +186,23 @@
         <p>Certification list will appear here.</p>
     </div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="social-icons">
+        <a href="https://instagram.com/syailafaagnaa" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/syailafaagna" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:syailafaagnaa@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <p>© 2026 Syaila Fa Agna. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
